@@ -10,11 +10,12 @@
 			 margin-right: 6%; margin-left: 6%; padding: 20px; margin-bottom: 20px; font-size: 12px;}
 		h1, p, ul{text-align: left; margin: 10; font-family: "BlinkMacSystemFont", "SF UI Text", 
 		"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", 
-		"Helvetica Neue", "Helvetica", "Arial", sans-serif; font-size: 16px; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+		"Helvetica Neue", "Helvetica", "Arial", sans-serif; font-size: 16px; -webkit-user-select: none; -ms-user-select: none; user-select: none; padding-left: 100px; padding-right: 400px;}
 		h2{text-align: center; margin: 10; font-family: "BlinkMacSystemFont", "SF UI Text", 
 		"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", 
-		"Helvetica Neue", "Helvetica", "Arial", sans-serif; font-size: 16px; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
-		h1{color:rgb(255, 255, 255); font-size: 36px; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+		"Helvetica Neue", "Helvetica", "Arial", sans-serif; font-size: 16px; -webkit-user-select: none; -ms-user-select: none; user-select: none; padding-left: 400px;
+		padding-right: 200px;}
+		h1{color:rgb(255, 255, 255); font-size: 36px; -webkit-user-select: none; -ms-user-select: none; user-select: none; padding-left: 100px; padding-right: 400px;}
 	
 		p, ul{color:#a0a0a0; }
 		a{color: rgb(255, 255, 255);}
@@ -38,6 +39,47 @@
  			 background-color: transparent;
   			text-decoration: underline;
 		}
+		.container {
+ 	position: relative;
+  	width: 100%;
+ 	overflow: hidden;
+	 padding-left: 125px;
+	}
+
+		/* On screens that are 1300px wide or less, the background color is blue */
+		@media screen and (max-width: 1300px) {
+ 		 body {
+			margin-right: 10%; margin-left: 10%; padding: 10px; margin-bottom: 10px; font-size: 12px;
+  		}
+		ul,p{font-size: 16px; padding-left: 50px; padding-right: 200px;}
+		h1{font-size: 26px; padding-left: 50px;padding-right: 200pxpx;}
+		h2{font-size: 16px; padding-left: 50px;padding-right: 200pxpx;}
+		.container {position: relative;width:100%;overflow: hidden;padding-left: 25px;}
+		}
+
+
+		/* On screens that are 992px wide or less, the background color is olive */
+		@media screen and (max-width: 992px) {
+  		body {
+			margin-right: 5%; margin-left: 5%; padding: 5px; margin-bottom: 5px; font-size: 12px;
+  		}
+		ul,p{font-size: 16px; padding-left: 50px; padding-right: 150px;}
+		h1{font-size: 20px; padding-left: 50px;padding-right: 150px;}
+		h2{font-size: 16px; padding-left: 50px;padding-right: 150px;}
+		.container {position: relative;width: 100%;overflow: hidden;padding-left: 15px;}
+	}
+
+			/* On screens that are 600px wide or less, the background color is olive */
+			@media screen and (max-width: 600px) {
+  		body {
+			margin-right: 5%; margin-left: 5%; padding: 5px; margin-bottom: 5px; font-size: 12px;
+  		}
+		ul,p{font-size: 16px; padding-left: 25px; padding-right: 100px;}
+		h1{font-size: 20px; padding-left: 25px;padding-right: 100px;}
+		h2{font-size: 16px; padding-left: 25px;padding-right: 100px;}
+		.container {position: relative;width: 100%;overflow: hidden;padding-left: 15px;}
+	}
+
 	</style> 
 </head>
 
@@ -45,8 +87,6 @@
 	Some of them could be found <a href="https://github.com/SAEagle/"> Here</a>.</p>
 <hr>
 
-<div style="padding-left: 125px;">
-	<div style="padding-right: 250px;">
 <h1>
 <a>Unreal Arena 3 - nostalgia project</a> 
 </h1>
@@ -55,7 +95,7 @@
 	I've always wondered how it would be to play Quake with UE.
 	In future planning add netcode to support local multiplayer.
 	Here is the link to the repo where you can check the latest updates: <a href="https://github.com/SAEagle/unrealarena3">https://github.com/SAEagle/unrealarena3</a></p>
-	<iframe width="540" height="240" src = "https://www.youtube.com/embed/Y6s8mV_GVr4"></iframe>  
+	<div class="container"><iframe width="540" height="240" src = "https://www.youtube.com/embed/Y6s8mV_GVr4"></iframe></div>
 	<p>	Challenges: 
 		<ul style="list-style-type:disc;">
 			<li>C++ core of the project with minor decorators in the blueprints</li>
@@ -65,8 +105,7 @@
 <div>
 </div></div></div></div></div>
 
-<div style="padding-left: 125px;">
-	<div style="padding-right: 350px;">
+
 <h1>
 <a>ASH</a> 
 </h1>
@@ -75,16 +114,15 @@
 	The whole logic, animation states, level design, UI, and materials were done in blueprints.
 	Unique stances combat mechanic with 3 stances for defense and attack.
 	The initial project was used for fundraising and support later development. The final project is <a href="https://store.steampowered.com/app/1522140/Demon_Skin/">Demon Skin</a>. It was an interesting period of researchinh the 3d sidescrollers themes with fresh combat mechanic.</p>
-	<iframe width="540" height="240" src = "https://youtube.com/embed/R2Ea57kuXjQ"> </iframe>
-<p>	Challenges:
+	<div class="container"><iframe width="540" height="240" src = "https://youtube.com/embed/R2Ea57kuXjQ"></iframe> </div>
+<p>	Challenges: 
 <ul style="list-style-type:disc;">
 	<li>Root Animations implementation and matching it with states</li>
 	<li>Whole inventory system and the UI crafted in the Blueprints</li>
   </ul></p>
-<div></div></div></div></div></div>
+<div></div></div></div></div></div></div>
 
-<div style="padding-left: 125px;">
-	<div style="padding-right: 350px;">
+
 <h1>
 <a>Hovecraft Shooter</a> 
 </h1>
@@ -94,7 +132,7 @@
 	People have mastered gravity and after the world war, the world is in decline.
 	You, as a representative of one of the governors of the current region, will have to restore order in the wastelands...
 	<p>	The goal was to recreate a HIGHFLEET on the hovercrafts.</p>
-<iframe width="540" height="240" src = "https://youtube.com/embed/utpA9QkqmPE"> </iframe>
+	<div class="container"><iframe width="540" height="240" src = "https://youtube.com/embed/utpA9QkqmPE"> </iframe></div>
 <p>	Challenges: 
 	<ul style="list-style-type:disc;">
 		<li>Physics calculations for hovercrafts</li>
@@ -103,8 +141,7 @@
 	  </ul></p>
 <div></div></div></div></div></div>
 
-<div style="padding-left: 125px;">
-	<div style="padding-right: 350px;">
+
 <h1>
 <a>The Last Battle</a> 
 </h1>
@@ -112,7 +149,7 @@
 <p> The 2D pixel-perfect arcade. Where you are playing as a Viking who is trying to stand his last battle with a horde of creatures. 
 	<p>	The goal was to recreate pixelperfect view and UI.<p>	
 		Here are the handpainted sprites from the project.</p>
-<iframe width="540" height="240" src = "https://youtube.com/embed/JafeajJzC_g"> </iframe>
+		<div class="container"><iframe width="540" height="240" src = "https://youtube.com/embed/JafeajJzC_g"> </iframe></div>
 <p>	Challenges: 
 	<ul style="list-style-type:disc;">
 		<li>Art production</li>
@@ -120,8 +157,6 @@
 	  </ul></p>
 <div></div></div></div></div></div>
 
-<div style="padding-left: 125px;">
-	<div style="padding-right: 350px;">
 <h1>
 <a>Realtime RPG Combat</a> 
 </h1>
@@ -129,7 +164,7 @@
 <p> The purpose of this project was to recreate a feeling of the realtime decision making in a grid based combats.
 	The 3 levels with different enemy types can show the basics of the mechanic.
 	<p>	The goal was to create realtime combat on the grid based map.</p>
-<iframe width="540" height="240" src = "https://youtube.com/embed/wgKzaMS0Yjg"> </iframe>
+	<div class="container"><iframe width="540" height="240" src = "https://youtube.com/embed/wgKzaMS0Yjg"> </iframe></div>
 <p>	Challenges: 
 	<ul style="list-style-type:disc;">
 		<li>Realtime combat logic based on the timers</li>
@@ -137,8 +172,7 @@
 	  </ul></p>
 <div></div></div></div></div></div>
 
-<div style="padding-left: 125px;">
-	<div style="padding-right: 350px;">
+
 <h1>
 <a>Space Exploration </a> 
 </h1>
@@ -147,7 +181,7 @@
 Explore the solar system map on your own ship. Onboard the enemy ships and conquer them.
 Open real-time objects on the map with indoor Turn Based combat.
 <p>	The goal was to recreate JRPG style combat. </p>
-<iframe width="540" height="240" src = "https://youtube.com/embed/eMNjmSKJnkE"> </iframe>
+<div class="container"><iframe width="540" height="240" src = "https://youtube.com/embed/eMNjmSKJnkE"> </iframe></div>
 <p>	Challenges: 
 	<ul style="list-style-type:disc;">
 		<li>Turn Based combat mechanics in blueprints</li>
@@ -155,8 +189,7 @@ Open real-time objects on the map with indoor Turn Based combat.
 	  </ul></p>
 <div></div></div></div></div></div>
 
-<div style="padding-left: 125px;">
-	<div style="padding-right: 350px;">
+
 <h1>
 <a>Top Down Shooter</a> 
 </h1>
@@ -164,7 +197,7 @@ Open real-time objects on the map with indoor Turn Based combat.
 <p> Testing the top-down shooter mechanics with complex rotation animations according to the movement transforms.
 	Some simple weapon inventory systems with AI logic.
 	<p>	The goal was to test the TDS mechanic. </p>
-<iframe width="540" height="240" src = "https://youtube.com/embed/QN7alRg2PgM"> </iframe>
+	<div class="container"><iframe width="540" height="240" src = "https://youtube.com/embed/QN7alRg2PgM"> </iframe></div>
 <p>	Challenges: 
 	<ul style="list-style-type:disc;">
 		<li>Blueprints weapon inventory system</li>
